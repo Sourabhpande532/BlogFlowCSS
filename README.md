@@ -14,3 +14,6 @@
 - Used Flexbox for alignment, spacing, and responsive behavior across sections.
 - Applied relative and absolute positioning with correct parent–child behavior.
 - Focused on improving UI consistency, spacing, and component structure based on earlier revisions.
+
+## Demo
+![](./assets/image.png)
