@@ -1,81 +1,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <style>
-        :root {
-            --text-color: white;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .header {
-            background-color: #020618;
-            padding: 0.7rem 1rem;
-            height: 320px;
-        }
-
-        .navigation {
+        .cardDetails{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 1rem 0;
         }
-
-        .non-list-bullets {
-            list-style: none;
-        }
-
-        .social_icons {
-            max-width: 28px;
-            height: 25px;
-            /* background: white;
-            padding: 2px; */
-            /* border-radius: 6px; */
-            filter: brightness(0) invert(1);
-        }
-
-        .nav_items {
-            display: inline;
-            padding: 0rem 0.6rem;
-        }
-
-        .link {
-            text-decoration: none;
-            color: var(--text-color);
-        }
-
-        .link_subscribe {
-            position: relative;
-            bottom: 7px;
-            border: 1px solid white;
-            padding: 0.4rem 0.7rem;
-            border-radius: 10px;
-        }
-
-        .end_img {
-            width: 120px;
-        }
-
-        .navigate_item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: var(--text-color);
-            position: relative;
-            top: 60px;
+        .explored_blogs{
+            max-width: 550px;
+            padding: 0.5rem;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <nav class="navigation">
+        <nav class="navigation container">
             <ul class="non-list-bullets">
                 <li class="nav_items"><a class="link" href="/">HOME</a></li>
                 <li class="nav_items"><a class="link" href="/">TAG</a></li>
@@ -83,20 +29,174 @@
                 <li class="nav_items"><a class="link" href="/">HELP</a></li>
             </ul>
             <ul class="non-list-bullets">
-                <li class="nav_items"><img class="social_icons"
-                        src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png" alt="facebook_img"></li>
-                <li class="nav_items"><img class="social_icons"
-                        src="https://cdn-icons-png.flaticon.com/128/25/25347.png" alt="twitter_img"></li>
-                <li class="nav_items"><img class="social_icons"
-                        src="https://cdn-icons-png.flaticon.com/128/9580/9580357.png" alt="dark_mode"></li>
-                <li class="nav_items"><a class="link link_subscribe" class="" href="/">Subscribe</a></li>
+                <li class="nav_items">
+                    <img class="social_icons" src="https://cdn-icons-png.flaticon.com/128/1384/1384005.png"
+                        alt="facebook_img" />
+                </li>
+                <li class="nav_items">
+                    <img class="social_icons" src="https://cdn-icons-png.flaticon.com/128/25/25347.png"
+                        alt="twitter_img" />
+                </li>
+                <li class="nav_items">
+                    <img class="social_icons" src="https://cdn-icons-png.flaticon.com/128/9580/9580357.png"
+                        alt="dark_mode" />
+                </li>
+                <li class="nav_items">
+                    <a class="link link_subscribe" class="" href="/">Subscribe</a>
+                </li>
             </ul>
         </nav>
         <div class="navigate_item">
-            <img class="end_img" src="./assets/640px-Ghost-Logo_svg_zwtcgw.png" alt="ghost_img">
+            <img class="end_img" src="./assets/middleLogo-3_g41y4r.png" alt="ghost_img" />
             <p>Thoughts, stories, and ideas.</p>
         </div>
     </header>
+    <main>
+        <!-- Secton 1 -->
+        <section>
+            <div class="container hero">
+                <div>
+                    <img class="hero_section_img" src="./assets/ghostImage1_gsl1i7.png" alt="" srcset="" />
+                </div>
+                <div class="hero_introduction">
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h2><strong>Welcome to Ghost</strong></h2>
+                    </div>
+
+                    <p class="text-secondary">
+                        Welcome, it's great to have you here. We know that first
+                        impressions are important, so we've populated your new site with
+                        some initial getting started posts that will help you get familiar
+                        with everything in no time. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Qui, placeat!
+                    </p>
+                    <div class="readBlog">
+                        <div>
+                            <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                        </div>
+                        <div>
+                            <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                            <p class="paragraph">25 FEB 2020 | 1 MIN</p>
+                            <article class="text-secondary">Read</article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!-- section 2 -->
+        <section class="container">
+            <div class="align_card">
+                <!-- CARD 1 -->
+                <div class="explored_blog">
+                    <img src="./assets/ghostImage2_ken5hq.avif" alt="card_img" style="width: 360px;" />
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h4 class="">Writing posts with Ghost ✍️</h4>
+                        <p class="text-secondary">Discover familiar formatting options in a functional toolbar and the
+                            ability to add dynamic
+                            content seamlessly.</p>
+                        <div class="readBlog">
+                            <div>
+                                <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                            </div>
+                            <div>
+                                <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                                <p class="paragraph">25 FEB 2020 | 1 MIN</p>
+                                <article class="text-secondary">Read</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="explored_blog">
+                    <img src="./assets/ghostImage3_smh9dh.avif" alt="card_img" style="width: 360px;" />
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h4 class=""><strong>Publishing options</strong></h4>
+                        <p class="text-secondary">The Ghost editor post settings menu has everthing you need to fully
+                            optizize nd distribue your content effectively.</p>
+                        <div class="readBlog">
+                            <div>
+                                <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                            </div>
+                            <div>
+                                <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                                <p class="paragraph">25 FEB 2020 | 2 MIN</p>
+                                <article class="text-secondary">Read</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 3 -->
+                <div class="explored_blog">
+                    <img src="./assets/ghostImage4_fqf7yz.avif" alt="card_img" style="width: 360px;" />
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h4 class=""><strong>Managing admin settings</strong></h4>
+                        <p class="text-secondary">There are a couple of things to do nex whle your're getting set up:
+                            making your site private adn inviting your team.</p>
+                        <div class="readBlog">
+                            <div>
+                                <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                            </div>
+                            <div>
+                                <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                                <p class="paragraph">25 FEB 2020 | 2 MIN</p>
+                                <article class="text-secondary">Read</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section class="container">
+            <div class="cardDetails">
+                <div class="explored_blogs">
+                    <img src="./assets/ghostImage4_fqf7yz.avif" alt="card_img" style="width: 560px;" />
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h4 class="">Writing posts with Ghost ✍️</h4>
+                        <p class="text-secondary">Discover familiar formatting options in a functional toolbar and the
+                            ability to add dynamic
+                            content seamlessly.</p>
+                        <div class="readBlog">
+                            <div>
+                                <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                            </div>
+                            <div>
+                                <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                                <p class="paragraph">25 FEB 2020 | 1 MIN</p>
+                                <article class="text-secondary">Read</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD 2 -->
+                <div class="explored_blogs">
+                    <img src="./assets/ghostImage6_ezgbwj.avif" alt="card_img" style="width: 560px;" />
+                    <div>
+                        <h3 class="heading1">GETTING STARTED</h3>
+                        <h4 class=""><strong>Publishing options</strong></h4>
+                        <p class="text-secondary">The Ghost editor post settings menu has everthing you need to fully
+                            optizize nd distribue your content effectively.</p>
+                        <div class="readBlog">
+                            <div>
+                                <img class="logo" src="./assets/smallLogo_fmjzvk.png" alt="logo" />
+                            </div>
+                            <div>
+                                <h4 style="margin-top: 0; margin-bottom: 0">GHOST</h4>
+                                <p class="paragraph">25 FEB 2020 | 2 MIN</p>
+                                <article class="text-secondary">Read</article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
