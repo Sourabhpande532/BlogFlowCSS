@@ -125,6 +125,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
+            gap: 7px;
             justify-content: space-evenly;
             padding: 1.5rem 0;
         }
